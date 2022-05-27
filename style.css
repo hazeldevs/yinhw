@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+
+html{
+	height: 120%;
+	animation: open 2s;
+}
+
+body {
+	background: linear-gradient(white, grey, black);
+	background-size: 400% 400%;
+	animation: background-move 10s ease infinite;
+}
+
+#header {
+	position: relative;
+	border: 5px solid grey;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 40px;
+	margin: auto;
+	width: 70%;
+	height: 250px;
+	letter-spacing: 20px;
+	line-height: 10px;
+}
+
+#header > h1 {
+	font-family: 'Nova Mono', monospace;
+	text-shadow: 0px 0px 10px white;
+}
+
+#header > h2 {
+	font-family: 'Staatliches', display;
+	color: black;
+	text-shadow: 0px 0px 10px white;
+}
+
+#content {
+	color: white;
+	font-family: 'Caveat', handwriting;
+	font-weight: bold;
+	position: relative;
+	border: 2px solid grey;
+	border-radius: 10px;
+	text-align: left;
+	margin: auto;
+	font-size: 30px;
+	background-color: grey;
+	padding-left: 10px;
+	opacity: .5;
+	padding-right: 10px;
+}
+
+#footer {
+	margin: auto;
+	color: grey;
+	font-family: 'Roboto Condensed', sans-serif;
+	position: relative;
+	border: 7px solid darkgrey;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	line-height: 1em;
+	padding-top: 0;
+	padding-bottom: 0px;
+	font-size: 40px;
+	font-weight: 300;
+	background-color: darkgrey;
+	opacity: 1;
+}
+
+#signoff {
+	color: white;
+	text-shadow: 0px 0px 2px white;
+	font-family: 'Dancing Script', handwriting;
+}
+
+@keyframes open {
+	0% {transform: scale(70%)}
+	
+	20% {transform: scale(110%)}
+	
+	100% {transform: scale(100%)}
+	
+}
+
+@keyframes background-move {
+	0% {background-position: 0% 50%;}
+	
+	60% {background-position: 25% 10%;}
+
+	80% {background-position: 78% 90%;}
+	
+	100% {background-position: 0% 50%;}
+}
